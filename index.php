@@ -19,7 +19,7 @@
 			<span>
 			  <img class="slideTitleElement" src="" alt="Logo" />
 			  <p class="slideTitleElement">cv.ee</p>
-			  <p class="slideTitleElement">tunnustan kolleegi</p>
+			  <p class="slideTitleElement">#tunnustakolleegi</p>
 			</span>
 			</div>
 		  </div>
@@ -212,7 +212,9 @@
 			  ctx.fillText($('.nameInput').val(), 80, 50);
 			  ctx.fillText($('.titleOf').val(), 110, 50);
 		    
-			   saveImageToServer(canvas.toDataURL(), id);
+			  saveImageToServer(canvas.toDataURL(), id);
+			  
+			  
 			}			
 		  };
 		  
@@ -268,6 +270,7 @@
 		  currentSlide(id+1);
 	  });
 	
+	/*
 	  $('#shareToFacebook').on('click', function(){
 	    FB.getLoginStatus(function(response) {
 		  if (response.status === 'connected') {
@@ -292,6 +295,14 @@
 		}, {scope: 'publish_actions'});
 		  }
 		 });
+	  });
+	*/
+	
+	  $('#shareToFacebook').on('click', function(){
+	    FB.ui({
+				method: 'share',
+				href: 'https://developers.facebook.com/docs/'
+			}, function(response){});
 	  });
 	
 	  function checkIfLoggedIn(){

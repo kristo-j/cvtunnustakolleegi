@@ -11,15 +11,14 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  height: 550px;
+  height: 100%;
   position: absolute;
   margin: auto;
   background-color: gray;
 }
 
 .slider{
-	overflow:hidden;
-	
+  overflow:hidden;
 }
 
 /* Next & previous buttons */
