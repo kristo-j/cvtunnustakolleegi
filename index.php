@@ -308,13 +308,30 @@
 			} else if (response.status === 'not_authorized') {
 			// the user is logged in to Facebook, 
 			// but has not authenticated your app
-			FB.login(function(){
-			
-			}, {scope: 'publish_actions'});
+				FB.login(function(){
+				  if (response.status === 'connected') {
+					// Logged into your app and Facebook.
+					FB.ui({
+						method: 'share',
+						href: 'https://developers.facebook.com/docs/'
+					}, function(response){});
+				  } else {
+					// The person is not logged into this app or we are unable to tell. 
+				  }
+				}, {scope: 'publish_actions'});
 		  } else {
 			// the user isn't logged in to Facebook.
 			FB.login(function(){
-			
+			  if (response.status === 'connected') {
+				// Logged into your app and Facebook.
+				console.log('connected');
+				FB.ui({
+					method: 'share',
+					href: 'https://developers.facebook.com/docs/'
+				}, function(response){});
+			  } else {
+				// The person is not logged into this app or we are unable to tell. 
+			  }
 			}, {scope: 'publish_actions'});
 		  }
 		});
