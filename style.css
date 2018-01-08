@@ -38,18 +38,30 @@ img {vertical-align: middle;}
 
 .slideTitle {
 	display: inline-block;
-	width: 100%;
-	background-color: green;
+	background-color: white;
 	height: 10%;
+	width: 100%;
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-top: 50px;
+	color: blue;
 }
 
-.slideTitle div{
-  vertical-align: middle;
+.companyElement{
+  font-size: xx-large;
+  color: black;
+}
+
+.activityElement{
+  color: white;
+  font-size: xx-large;
+  background-color: blue;
+  padding: 5px 8px 5px 8px;
+  border-radius: 10px;
 }
 
 .slideTitleElement{
   display: inline;
-  top: 50%;
 }
 
 .slideTitleSpan{
@@ -149,11 +161,21 @@ img {vertical-align: middle;}
 .actionLine{
   width: 100%;
   height: 5%;
+  font-size: x-large;
+  color: black;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 20px;
 }
 
 .informationLine{
   width: 100%;
   height: 10%;
+  font-size: x-large;
+  color: black;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 20px;
 }
 
 .inheritDimension{

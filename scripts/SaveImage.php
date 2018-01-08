@@ -1,5 +1,5 @@
 <?php
-	define('UPLOAD_DIR', '..\\tunnustused\\');
+	define('UPLOAD_DIR', '/var/www/html/tunnustused/');
 
 	$img = $_POST['imgBase'];
 	$img = str_replace('data:image/png;base64,', '', $img);
@@ -7,6 +7,7 @@
 	$data = base64_decode($img);
 	$filename = uniqid() . '.png';
 	$file = UPLOAD_DIR . $filename;
+	
 	$success = file_put_contents($file, $data);
 	
 	echo './tunnustused/'.$filename;

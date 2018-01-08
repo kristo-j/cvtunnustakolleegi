@@ -1,7 +1,4 @@
 <!doctype HTML>
-<?php
-	require_once __DIR__ . '/fb/fb/src/Facebook/autoload.php';
-?>
 <html>
 	<head>
 		<link rel="stylesheet" href="style.css" type="text/css">
@@ -14,17 +11,17 @@
 	<div class="slideshow-container col-12">
 
 		<div class="mySlides col-12">
-		  <div class="slideTitle">
+		  <div class="slideTitle" align="center">
 		    <div>
 			<span>
 			  <img class="slideTitleElement" src="" alt="Logo" />
-			  <p class="slideTitleElement">cv.ee</p>
-			  <p class="slideTitleElement">#tunnustakolleegi</p>
+			  <p class="slideTitleElement companyElement">CV.ee</p>
+			  <p class="slideTitleElement activityElement">#tunnustakolleegi</p>
 			</span>
 			</div>
 		  </div>
-		  <div class="actionLine"><p>Tunnusta head kolleegi!</p></div>
-		  <div class="informationLine"><p>Võta osa oma kolleegi tunnustamisest</p></div>
+		  <div class="actionLine" align="center"><p>Tunnusta head kolleegi!</p></div>
+		  <div class="informationLine" align="center"><p>Võta osa oma kolleegi tunnustamisest</p></div>
 		  <div class="contentSection">
 			<img src="" alt="cv.ee Logo" />
 		  </div>
@@ -52,7 +49,7 @@
 				  <img class="templateImage" src="./photos/dank.png" alt="picture" class="img-responsive"/>
 				</div>
 				<div class="carousel-item inheritDimension">
-				  <img class="templateImage" src="./photos/dank.png" alt="picture" class="img-responsive"/>
+				  <img class="templateImage inheritDimension" src="./photos/dank.png" alt="picture" class="img-responsive"/>
 				</div>
 				<div class="carousel-item inheritDimension">
 				  <img class="templateImage" src="./photos/dank.png" alt="picture" class="img-responsive"/>
@@ -178,6 +175,7 @@
 			  imgBase: dataUrl
 			},
 			success: function(data){
+				console.log(data);
 			  $('.finishSection').append(
 			    '<img class="inheritDimension" src="'+data+'">'
 			  );
@@ -270,90 +268,13 @@
 		  currentSlide(id+1);
 	  });
 	
-	/*
-	  $('#shareToFacebook').on('click', function(){
-	    FB.getLoginStatus(function(response) {
-		  if (response.status === 'connected') {
-			var uid = response.authResponse.userID;
-			var accessToken = response.authResponse.accessToken;
-			console.log("logged in");
-			FB.ui({
-				method: 'share',
-				href: 'https://developers.facebook.com/docs/'
-			}, function(response){});
-			
-			} else if (response.status === 'not_authorized') {
-			// the user is logged in to Facebook, 
-			// but has not authenticated your app
-			FB.login(function(){
-			
-		}, {scope: 'publish_actions'});
-		  } else {
-			// the user isn't logged in to Facebook.
-			FB.login(function(){
-			
-		}, {scope: 'publish_actions'});
-		  }
-		 });
-	  });
-	*/
-	
 	  $('#shareToFacebook').on('click', function(){
 	    FB.ui({
-				method: 'share',
-				href: 'https://developers.facebook.com/docs/'
-			}, function(response){});
+			method: 'share',
+			href: 'https://developers.facebook.com/docs/'
+		}, function(response){});
 	  });
-	
-	  function checkIfLoggedIn(){
-		FB.getLoginStatus(function(response) {
-		  if (response.status === 'connected') {
-			var uid = response.authResponse.userID;
-			var accessToken = response.authResponse.accessToken;
-			console.log("logged in");
-			FB.ui({
-				method: 'share',
-				href: 'https://developers.facebook.com/docs/'
-			}, function(response){});
-			
-			} else if (response.status === 'not_authorized') {
-			// the user is logged in to Facebook, 
-			// but has not authenticated your app
-				FB.login(function(){
-				  if (response.status === 'connected') {
-					// Logged into your app and Facebook.
-					FB.ui({
-						method: 'share',
-						href: 'https://developers.facebook.com/docs/'
-					}, function(response){});
-				  } else {
-					// The person is not logged into this app or we are unable to tell. 
-				  }
-				}, {scope: 'publish_actions'});
-		  } else {
-			// the user isn't logged in to Facebook.
-			FB.login(function(){
-			  if (response.status === 'connected') {
-				// Logged into your app and Facebook.
-				console.log('connected');
-				FB.ui({
-					method: 'share',
-					href: 'https://developers.facebook.com/docs/'
-				}, function(response){});
-			  } else {
-				// The person is not logged into this app or we are unable to tell. 
-			  }
-			}, {scope: 'publish_actions'});
-		  }
-		});
-	  }
-	  
-	  function myFacebookLogin() {
-		FB.login(function(){
-			
-		}, {scope: 'publish_actions'});
-	  }	
-	
+		
 	  window.fbAsyncInit = function() {
 		FB.init({
 		  appId            : '140977083233016',
