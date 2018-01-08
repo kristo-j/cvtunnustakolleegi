@@ -12,18 +12,17 @@
 
 		<div class="mySlides col-12">
 		  <div class="slideTitle" align="center">
-		    <div>
-			<span>
-			  <img class="slideTitleElement" src="" alt="Logo" />
-			  <p class="slideTitleElement companyElement">CV.ee</p>
-			  <p class="slideTitleElement activityElement">#tunnustakolleegi</p>
-			</span>
-			</div>
+			<img class="bannerElement" src="./photos/cv_tunnustus_logo-01.png" alt="Logo" />
+			<!--
+			<img class="slideTitleElement companyLogo" src="./photos/cv_logo-01.png" alt="Logo" />
+			<p class="slideTitleElement companyElement">CV.ee</p>
+			<p class="slideTitleElement activityElement">#tunnustakolleegi</p>
+			-->
 		  </div>
 		  <div class="actionLine" align="center"><p>Tunnusta head kolleegi!</p></div>
 		  <div class="informationLine" align="center"><p>Võta osa oma kolleegi tunnustamisest</p></div>
-		  <div class="contentSection">
-			<img src="" alt="cv.ee Logo" />
+		  <div class="contentSection " align="center">
+			<img class="inheritDimension" src="./photos/imago_front-01.png" alt="cv.ee Logo" />
 		  </div>
 		  <div class="buttonDiv">
 		    <button id="1" type="button" class="btn btn-primary forwardButton">Alustan</button>
@@ -31,28 +30,33 @@
 		</div>
 
 		<div class="mySlides ">
-		  <div class="slideTitle">
-		    <div>
-			<span>
-			  <img class="slideTitleElement" src="" alt="Logo" />
-			  <p class="slideTitleElement">cv.ee</p>
-			  <p class="slideTitleElement">tunnustan kolleegi</p>
-			</span>
-			</div>
+		  <div class="slideTitle" align="center">
+			<img class="bannerElement" src="./photos/cv_tunnustus_logo-01.png" alt="Logo" />
+			<!--
+			<img class="slideTitleElement companyLogo" src="./photos/cv_logo-01.png" alt="Logo" />
+			<p class="slideTitleElement companyElement">CV.ee</p>
+			<p class="slideTitleElement activityElement">#tunnustakolleegi</p>
+			-->
 		  </div>
-		  <div class="actionLine">1 / 5</div>
-		  <div class="informationLine"><p>Vali sobiv disain</p></div>
-		  <div class="contentSection">
+		  <div class="actionLine" align="center">1 / 5</div>
+		  <div class="informationLine" align="center"><p>Vali sobiv disain</p></div>
+		  <div class="contentSection" align="center">
 			<div id="carouselSection" class="carousel slide carouselContent inheritDimension" data-ride="carousel" data-interval="false">
 			  <div class="carousel-inner inheritDimension">
 				<div class="carousel-item active inheritDimension">
-				  <img class="templateImage" src="./photos/dank.png" alt="picture" class="img-responsive"/>
+				  <div class="imageContainer">
+				    <img id="tunnustus01" class="templateImage" src="./photos/tunnustus-01.png" alt="picture" class="img-responsive"/>
+				  </div>
 				</div>
 				<div class="carousel-item inheritDimension">
-				  <img class="templateImage inheritDimension" src="./photos/dank.png" alt="picture" class="img-responsive"/>
+				  <div class="imageContainer">
+				    <img id="tunnustus02" class="templateImage" src="./photos/tunnustus-02.png" alt="picture"/>
+				  </div>
 				</div>
 				<div class="carousel-item inheritDimension">
-				  <img class="templateImage" src="./photos/dank.png" alt="picture" class="img-responsive"/>
+				  <div class="imageContainer">
+				    <img id="tunnustus03" class="templateImage" src="./photos/tunnustus-03.png" alt="picture"/>
+				  </div>
 				</div>
 			  </div>
 			  <p class="carousel-control-prev" role="button" data-slide="prev">
@@ -71,18 +75,17 @@
 		</div>
 
 		<div class="mySlides ">
-		  <div class="slideTitle">
-			<div>
-			<span>
-			  <img class="slideTitleElement" src="" alt="Logo" />
-			  <p class="slideTitleElement">cv.ee</p>
-			  <p class="slideTitleElement">tunnustan kolleegi</p>
-			</span>
-			</div>
+		  <div class="slideTitle" align="center">
+			<img class="bannerElement" src="./photos/cv_tunnustus_logo-01.png" alt="Logo" />
+			<!--
+			<img class="slideTitleElement companyLogo" src="./photos/cv_logo-01.png" alt="Logo" />
+			<p class="slideTitleElement companyElement">CV.ee</p>
+			<p class="slideTitleElement activityElement">#tunnustakolleegi</p>
+			-->
 		  </div>
-		  <div class="actionLine">2 / 5</div>
-		  <div class="informationLine"><p>Kirjuta siia ettevõtte nimi</p></div>
-		  <div class="contentSection">
+		  <div class="actionLine" align="center">2 / 5</div>
+		  <div class="informationLine" align="center"><p>Kirjuta siia ettevõtte nimi</p></div>
+		  <div class="contentSection" align="center">
 		    <input type="text" class="form-group companyInput" />
 		  </div>
 		  <div class="buttonDiv">
@@ -91,18 +94,17 @@
 		</div>
 		
 		<div class="mySlides ">
-		  <div class="slideTitle">
-			<div>
-			<span>
-			  <img class="slideTitleElement" src="" alt="Logo" />
-			  <p class="slideTitleElement">cv.ee</p>
-			  <p class="slideTitleElement">tunnustan kolleegi</p>
-			</span>
-			</div>
+		  <div class="slideTitle" align="center">
+			<img class="bannerElement" src="./photos/cv_tunnustus_logo-01.png" alt="Logo" />
+			<!--
+			<img class="slideTitleElement companyLogo" src="./photos/cv_logo-01.png" alt="Logo" />
+			<p class="slideTitleElement companyElement">CV.ee</p>
+			<p class="slideTitleElement activityElement">#tunnustakolleegi</p>
+			-->
 		  </div>
-		  <div class="actionLine">3 / 5</div>
-		  <div class="informationLine"><p>Kolleegi nimi</p></div>
-		  <div class="contentSection">
+		  <div class="actionLine" align="center">3 / 5</div>
+		  <div class="informationLine" align="center"><p>Kolleegi nimi</p></div>
+		  <div class="contentSection" align="center">
 		    <input type="text" class="form-group nameInput" />
 		  </div>
 		  <div class="buttonDiv">
@@ -111,19 +113,18 @@
 		</div>
 		
 		<div class="mySlides ">
-		  <div class="slideTitle">
-			<div>
-			<span>
-			  <img class="slideTitleElement" src="" alt="Logo" />
-			  <p class="slideTitleElement">cv.ee</p>
-			  <p class="slideTitleElement">tunnustan kolleegi</p>
-			</span>
-			</div>
+		  <div class="slideTitle" align="center">
+			<img class="bannerElement" src="./photos/cv_tunnustus_logo-01.png" alt="Logo" />
+			<!--
+			<img class="slideTitleElement companyLogo" src="./photos/cv_logo-01.png" alt="Logo" />
+			<p class="slideTitleElement companyElement">CV.ee</p>
+			<p class="slideTitleElement activityElement">#tunnustakolleegi</p>
+			-->
 		  </div>
-		  <div class="actionLine">4 / 5</div>
-		  <div class="informationLine"><p>Tiitel</p></div>
-		  <div class="contentSection">
-		    <input type="text" class="form-group nameInput titleOf" />
+		  <div class="actionLine" align="center">4 / 5</div>
+		  <div class="informationLine" align="center"><p>Tiitel</p></div>
+		  <div class="contentSection" align="center">
+		    <input type="text" class="form-group titleInput titleOf" />
 		  </div>
 		  <div class="buttonDiv">
 			<button id="5" type="button" class="btn btn-primary generatePicture">Jätkan</button>
@@ -131,7 +132,7 @@
 		</div>
 		
 		<div class="mySlides ">
-		  <div class="slideTitle">
+		  <div class="slideTitle" align="center">
 			<div>
 			<span>
 			  <img class="slideTitleElement" src="" alt="Logo" />
@@ -140,8 +141,8 @@
 			</span>
 			</div>
 		  </div>
-		  <div class="actionLine"></div>
-		  <div class="informationLine"><p>bblablablablab</p></div>
+		  <div class="actionLine" align="center"></div>
+		  <div class="informationLine" align="center"><p>bblablablablab</p></div>
 		  <div class="contentSection finishSection">
 
 		  </div>
@@ -202,7 +203,7 @@
 			ctx.canvas.width = this.width;
 		    ctx.canvas.height = this.height;
 		  
-		    background.src = selectedImage.src;
+		    background.src = './picture'+selectedImage.id + '.png';
 		    background.onload = function(){
 		      ctx.drawImage(background,0,0);   
 			  
@@ -211,8 +212,6 @@
 			  ctx.fillText($('.titleOf').val(), 110, 50);
 		    
 			  saveImageToServer(canvas.toDataURL(), id);
-			  
-			  
 			}			
 		  };
 		  

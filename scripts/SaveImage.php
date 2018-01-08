@@ -1,5 +1,5 @@
 <?php
-	define('UPLOAD_DIR', '/var/www/html/tunnustused/');
+	define('UPLOAD_DIR', '..//tunnustused//');
 
 	$img = $_POST['imgBase'];
 	$img = str_replace('data:image/png;base64,', '', $img);
