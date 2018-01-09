@@ -20,12 +20,13 @@
 			-->
 		  </div>
 		  <div class="actionLine" align="center"><p>Tunnusta head kolleegi!</p></div>
-		  <div class="informationLine" align="center"><p>Võta osa oma kolleegi tunnustamisest</p></div>
-		  <div class="contentSection " align="center">
+		  <div class="informationLine" align="center"><p>Üllata ühte või mitut kolleegi, andes talle tunnustuse, mida
+				ta väärib 100% ning edasta see tema Facebooki seinale</p></div>
+		  <div class="photoSection" align="center">
 			<img class="inheritDimension" src="./photos/imago_front-01.png" alt="cv.ee Logo" />
 		  </div>
 		  <div class="buttonDiv">
-		    <button id="1" type="button" class="btn btn-primary forwardButton">Alustan</button>
+		    <button id="1" type="button" class="forwardButton">Alustan</button>
 		  </div>
 		</div>
 
@@ -38,24 +39,24 @@
 			<p class="slideTitleElement activityElement">#tunnustakolleegi</p>
 			-->
 		  </div>
-		  <div class="actionLine" align="center">1 / 5</div>
-		  <div class="informationLine" align="center"><p>Vali sobiv disain</p></div>
-		  <div class="contentSection" align="center">
+		  <div class="stepNumber" align="center">1 / 5</div>
+		  <div class="actionText" align="center"><p>Vali sobiv tunnustus</p></div>
+		  <div class="templateSection" align="center">
 			<div id="carouselSection" class="carousel slide carouselContent inheritDimension" data-ride="carousel" data-interval="false">
 			  <div class="carousel-inner inheritDimension">
 				<div class="carousel-item active inheritDimension">
 				  <div class="imageContainer">
-				    <img id="tunnustus01" class="templateImage" src="./photos/tunnustus-01.png" alt="picture" class="img-responsive"/>
+				    <img id="tunnustus-01-title" class="templateImage" src="./photos/tunnustus-01.png" alt="picture" class="img-responsive"/>
 				  </div>
 				</div>
 				<div class="carousel-item inheritDimension">
 				  <div class="imageContainer">
-				    <img id="tunnustus02" class="templateImage" src="./photos/tunnustus-02.png" alt="picture"/>
+				    <img id="tunnustus-02-title" class="templateImage" src="./photos/tunnustus-02.png" alt="picture"/>
 				  </div>
 				</div>
 				<div class="carousel-item inheritDimension">
 				  <div class="imageContainer">
-				    <img id="tunnustus03" class="templateImage" src="./photos/tunnustus-03.png" alt="picture"/>
+				    <img id="tunnustus-03-title" class="templateImage" src="./photos/tunnustus-03.png" alt="picture"/>
 				  </div>
 				</div>
 			  </div>
@@ -70,7 +71,7 @@
 			</div>
 		  </div>
 		  <div class="buttonDiv">
-		    <button id="2" type="button" class="btn btn-primary forwardButton generateCanvas">Jätkan</button>
+		    <button id="2" type="button" class="forwardButton generateCanvas">Jätkan</button>
 		  </div>
 		</div>
 
@@ -83,71 +84,92 @@
 			<p class="slideTitleElement activityElement">#tunnustakolleegi</p>
 			-->
 		  </div>
-		  <div class="actionLine" align="center">2 / 5</div>
-		  <div class="informationLine" align="center"><p>Kirjuta siia ettevõtte nimi</p></div>
+		  <div class="stepNumber" align="center">2 / 5</div>
+		  <div class="actionText" align="center">
+			<p>Kirjuta siia lahtrisse ettevõtte nimi,
+				kus tunnustamist väärt kolleeg töötab
+			</p>
+		  </div>
 		  <div class="contentSection" align="center">
-		    <input type="text" class="form-group companyInput" />
-		  </div>
-		  <div class="buttonDiv">
-			<button id="3" type="button" class="btn btn-primary forwardButton addCompanyName">Jätkan</button>
-		  </div>
-		</div>
-		
-		<div class="mySlides ">
-		  <div class="slideTitle" align="center">
-			<img class="bannerElement" src="./photos/cv_tunnustus_logo-01.png" alt="Logo" />
-			<!--
-			<img class="slideTitleElement companyLogo" src="./photos/cv_logo-01.png" alt="Logo" />
-			<p class="slideTitleElement companyElement">CV.ee</p>
-			<p class="slideTitleElement activityElement">#tunnustakolleegi</p>
-			-->
-		  </div>
-		  <div class="actionLine" align="center">3 / 5</div>
-		  <div class="informationLine" align="center"><p>Kolleegi nimi</p></div>
-		  <div class="contentSection" align="center">
-		    <input type="text" class="form-group nameInput" />
-		  </div>
-		  <div class="buttonDiv">
-			<button id="4" type="button" class="btn btn-primary forwardButton addPersonName">Jätkan</button>
-		  </div>
-		</div>
-		
-		<div class="mySlides ">
-		  <div class="slideTitle" align="center">
-			<img class="bannerElement" src="./photos/cv_tunnustus_logo-01.png" alt="Logo" />
-			<!--
-			<img class="slideTitleElement companyLogo" src="./photos/cv_logo-01.png" alt="Logo" />
-			<p class="slideTitleElement companyElement">CV.ee</p>
-			<p class="slideTitleElement activityElement">#tunnustakolleegi</p>
-			-->
-		  </div>
-		  <div class="actionLine" align="center">4 / 5</div>
-		  <div class="informationLine" align="center"><p>Tiitel</p></div>
-		  <div class="contentSection" align="center">
-		    <input type="text" class="form-group titleInput titleOf" />
-		  </div>
-		  <div class="buttonDiv">
-			<button id="5" type="button" class="btn btn-primary generatePicture">Jätkan</button>
-		  </div>
-		</div>
-		
-		<div class="mySlides ">
-		  <div class="slideTitle" align="center">
-			<div>
-			<span>
-			  <img class="slideTitleElement" src="" alt="Logo" />
-			  <p class="slideTitleElement">cv.ee</p>
-			  <p class="slideTitleElement">tunnustan kolleegi</p>
-			</span>
+		    <input type="text" class="form-group companyInput" maxLength="15" placeholder="Ettevõtte nimi"/>
+		    <div class="inheritDimension inputNote">
+				<p>PS! Maksimum tähemärkide arv on 15</p>
 			</div>
 		  </div>
-		  <div class="actionLine" align="center"></div>
-		  <div class="informationLine" align="center"><p>bblablablablab</p></div>
-		  <div class="contentSection finishSection">
+		  <div class="buttonDiv">
+			<button id="3" type="button" class="forwardButton addCompanyName">Jätkan</button>
+		  </div>
+		</div>
+		
+		<div class="mySlides ">
+		  <div class="slideTitle" align="center">
+			<img class="bannerElement" src="./photos/cv_tunnustus_logo-01.png" alt="Logo" />
+			<!--
+			<img class="slideTitleElement companyLogo" src="./photos/cv_logo-01.png" alt="Logo" />
+			<p class="slideTitleElement companyElement">CV.ee</p>
+			<p class="slideTitleElement activityElement">#tunnustakolleegi</p>
+			-->
+		  </div>
+		  <div class="stepNumber" align="center">3 / 5</div>
+		  <div class="actionText" align="center">
+			<p>Kirjuta siia lahtrisse kolleegi nimi,
+				keda soovid tunnustada
+			</p>
+		  </div>
+		  <div class="contentSection" align="center">
+		    <input type="text" class="form-group nameInput" maxLength="15" placeholder="Ees- ja perekonnanimi"/>
+			<div class="inheritDimension inputNote">
+				<p>PS! Maksimum tähemärkide arv on 15</p>
+			</div>
+		  </div>
+		  <div class="buttonDiv">
+			<button id="4" type="button" class="forwardButton addPersonName">Jätkan</button>
+		  </div>
+		</div>
+		
+		<div class="mySlides ">
+		  <div class="slideTitle" align="center">
+			<img class="bannerElement" src="./photos/cv_tunnustus_logo-01.png" alt="Logo" />
+			<!--
+			<img class="slideTitleElement companyLogo" src="./photos/cv_logo-01.png" alt="Logo" />
+			<p class="slideTitleElement companyElement">CV.ee</p>
+			<p class="slideTitleElement activityElement">#tunnustakolleegi</p>
+			-->
+		  </div>
+		  <div class="stepNumber" align="center">4 / 5</div>
+		  <div class="actionText" align="center">
+			<p>Kirjuta siia lahtrisse, miks su kolleeg
+				on ära teeninud selle tunnustuse</p>
+		  </div>
+		  <div class="contentSection textAreaSection" align="center">		    
+			<textarea rows="4" cols="50" class="form-group titleOf textAreaInput" maxLength="200"> 
+			
+			</textarea>
+		    <div class="inheritDimension inputNote">
+				<p>PS! Maksimum tähemärkide arv on 200</p>
+			</div>
+		  </div>
+		  <div class="buttonDiv">
+			<button id="5" type="button" class="generatePicture forwardButton">Genereeri pilt</button>
+		  </div>
+		</div>
+		
+		<div class="mySlides ">
+		  <div class="slideTitle" align="center">
+			<img class="bannerElement" src="./photos/cv_tunnustus_logo-01.png" alt="Logo" />
+			<!--
+			<img class="slideTitleElement companyLogo" src="./photos/cv_logo-01.png" alt="Logo" />
+			<p class="slideTitleElement companyElement">CV.ee</p>
+			<p class="slideTitleElement activityElement">#tunnustakolleegi</p>
+			-->
+		  </div>
+		  <div class="stepNumber" align="center"></div>
+		  <div class="actionText" align="center"><p>Jaga genereeritud pilt oma sõbrale!</p></div>
+		  <div class="photoSection finishSection" align="center">
 
 		  </div>
 		  <div class="buttonDiv">
-			<button id="shareToFacebook" type="button" class="btn btn-primary">Jagan facebookis</button>
+			<button id="shareToFacebook" type="button" class="shareButton">Jagan facebookis</button>
 		  </div>
 		</div>
 		
@@ -211,11 +233,11 @@
 			  ctx.fillStyle = "white";
 			  
 			  ctx.font = "bold 40px arial";
-			  ctx.fillText($('.companyInput').val(), 570, 150);
-			  ctx.font = "60px arial";
-			  ctx.fillText($('.nameInput').val(), 570, 300);
-			  font = "30px arial";
-			  ctx.fillText($('.titleOf').val(), 570, 450);
+			  ctx.fillText($('.companyInput').val(), 500, 150);
+			  ctx.font = "40px arial";
+			  ctx.fillText($('.nameInput').val(), 500, 500);
+			  //font = "30px arial";
+			  //ctx.fillText($('.titleOf').val(), 570, 450);
 		    
 			  saveImageToServer(canvas.toDataURL(), id);
 			}			
