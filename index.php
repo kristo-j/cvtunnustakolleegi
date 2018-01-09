@@ -169,6 +169,7 @@
 		var background = new Image();	
 		
 		function saveImageToServer(dataUrl, id){
+		  console.log('starting to save');
 		  $.ajax({
 			type: 'POST',
 			url: './scripts/SaveImage.php',
@@ -178,7 +179,7 @@
 			success: function(data){
 				console.log(data);
 			  $('.finishSection').append(
-			    '<img class="inheritDimension" src="'+data+'">'
+			    '<img id="generatedPicture" class="inheritDimension" align="center" src="'+data+'">'
 			  );
 			}
 		  }).done(function(){
@@ -192,7 +193,7 @@
 		  
 		  $('.carousel-item').each(function(i){
 		    if($(this).hasClass('active')){
-			  selectedImage = $(this)[0]['childNodes'][1];
+			  selectedImage = $(this).find('img');
 			}
 		  });
 		  
@@ -202,20 +203,25 @@
 			
 			ctx.canvas.width = this.width;
 		    ctx.canvas.height = this.height;
-		  
-		    background.src = './picture'+selectedImage.id + '.png';
+		  		  
+		    background.src = './photos/'+ selectedImage[0]['id'] + '.png';
 		    background.onload = function(){
 		      ctx.drawImage(background,0,0);   
 			  
-			  ctx.fillText($('.companyInput').val(), 50, 50);
-			  ctx.fillText($('.nameInput').val(), 80, 50);
-			  ctx.fillText($('.titleOf').val(), 110, 50);
+			  ctx.fillStyle = "white";
+			  
+			  ctx.font = "bold 40px arial";
+			  ctx.fillText($('.companyInput').val(), 570, 150);
+			  ctx.font = "60px arial";
+			  ctx.fillText($('.nameInput').val(), 570, 300);
+			  font = "30px arial";
+			  ctx.fillText($('.titleOf').val(), 570, 450);
 		    
 			  saveImageToServer(canvas.toDataURL(), id);
 			}			
 		  };
 		  
-		  image.src = selectedImage.src;
+		  image.src = selectedImage[0]['src'];
 		  	
 		});
 		
@@ -268,10 +274,16 @@
 	  });
 	
 	  $('#shareToFacebook').on('click', function(){
-	    FB.ui({
+		var pictureLocation = $('#generatedPicture').attr('src');
+	    pictureLocation = window.location+pictureLocation.replace('.', '');
+		
+		console.log(pictureLocation);
+		
+		FB.ui({
 			method: 'share',
-			href: 'https://developers.facebook.com/docs/'
+			href: pictureLocation,
 		}, function(response){});
+	    
 	  });
 		
 	  window.fbAsyncInit = function() {
