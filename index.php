@@ -117,9 +117,9 @@
 			</p>
 		  </div>
 		  <div class="contentSection" align="center">
-		    <input type="text" class="form-group nameInput" maxLength="15" placeholder="Ees- ja perekonnanimi"/>
+		    <input type="text" class="form-group nameInput" maxLength="35" placeholder="Ees- ja perekonnanimi"/>
 			<div class="inheritDimension inputNote">
-				<p>PS! Maksimum tähemärkide arv on 15</p>
+				<p>PS! Maksimum tähemärkide arv on 35</p>
 			</div>
 		  </div>
 		  <div class="buttonDiv">
