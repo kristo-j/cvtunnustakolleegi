@@ -5,14 +5,16 @@
 		<link rel="stylesheet" href="./scripts/bootstrap/css/bootstrap.min.css" type="text/css">
 		<link rel="stylesheet" href="./scripts/bootstrap/css/bootstrap-grid.min.css" type="text/css">
 		<link rel="stylesheet" href="./scripts/bootstrap/css/bootstrap-reboot.min.css" type="text/css">
+		<link rel="stylesheet" media="screen, print" href="//v.fastcdn.co/f/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" type="text/css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
 	
 	<div class="slideshow-container col-12">
 
-		<div class="mySlides col-12">
+		<div class="mySlides ">
 		  <div class="slideTitle" align="center">
-			<img class="bannerElement" src="./photos/cv_tunnustus_logo-01.png" alt="Logo" />
+			<img class="bannerElement" src="./photos/cv_tunnustus_logo-01_new.png" alt="Logo" />
 			<!--
 			<img class="slideTitleElement companyLogo" src="./photos/cv_logo-01.png" alt="Logo" />
 			<p class="slideTitleElement companyElement">CV.ee</p>
@@ -20,10 +22,18 @@
 			-->
 		  </div>
 		  <div class="actionLine" align="center"><p>Tunnusta head kolleegi!</p></div>
-		  <div class="informationLine" align="center"><p>Üllata ühte või mitut kolleegi, andes talle tunnustuse, mida
-				ta väärib 100% ning edasta see tema Facebooki seinale</p></div>
+		  <div class="informationLine" align="center">
+		    <div>
+			  <p>Oscareid jagatakse kord aastas, aga kuldsüdameid saab jagada ka siis, 
+			    kui kiitmise tunne peale tuleb.</p>
+			</div>
+			<div>
+			  <p>Võta 2 minutit, et tunnustada kolleegi kuldsüdamega, edastades sobiva 
+			    tiitli tema Facebooki seinale. Valikus on 18 erinevat tiitlit.</p>
+		    </div>
+		  </div>
 		  <div class="photoSection" align="center">
-			<img class="inheritDimension" src="./photos/imago_front-01.png" alt="cv.ee Logo" />
+			<img class="inheritDimension" src="./photos/tunnustus_new-01_elegantsem.png" alt="cv.ee Logo" />
 		  </div>
 		  <div class="buttonDiv">
 		    <button id="1" type="button" class="forwardButton">Alustan</button>
@@ -32,42 +42,81 @@
 
 		<div class="mySlides ">
 		  <div class="slideTitle" align="center">
-			<img class="bannerElement" src="./photos/cv_tunnustus_logo-01.png" alt="Logo" />
+			<img class="bannerElement" src="./photos/cv_tunnustus_logo-01_new.png" alt="Logo" />
 			<!--
 			<img class="slideTitleElement companyLogo" src="./photos/cv_logo-01.png" alt="Logo" />
 			<p class="slideTitleElement companyElement">CV.ee</p>
 			<p class="slideTitleElement activityElement">#tunnustakolleegi</p>
 			-->
 		  </div>
-		  <div class="stepNumber" align="center">1 / 5</div>
-		  <div class="actionText" align="center"><p>Vali sobiv tunnustus</p></div>
+		  <div class="stepNumber" align="center">Samm 1/5</div>
+		  <div class="actionText" align="center">
+		    <p>Vali sobiv kuldsüda 18 erineva tiitli hulgast vajutades noolt paremale või vasakule</p>
+		  </div>
+		  
 		  <div class="templateSection" align="center">
-			<div id="carouselSection" class="carousel slide carouselContent inheritDimension" data-ride="carousel" data-interval="false">
-			  <div class="carousel-inner inheritDimension">
+			<div id="carouselSection" class="carousel slide carouselContent inheritDimension carouselSectionFun" data-ride="carousel" data-interval="false">
+			  <div class="carousel-inner inheritDimension carousel-fun">
 				<div class="carousel-item active inheritDimension">
 				  <div class="imageContainer">
-				    <img id="tunnustus-01-title" class="templateImage" src="./photos/tunnustus-01.png" alt="picture" class="img-responsive"/>
+				    <img id="tunnustus_new-01_lobusam" class="templateImage" src="./photos/tunnustus_new-01_lobusam.png" alt="picture" class="img-responsive"/>
 				  </div>
 				</div>
 				<div class="carousel-item inheritDimension">
 				  <div class="imageContainer">
-				    <img id="tunnustus-02-title" class="templateImage" src="./photos/tunnustus-02.png" alt="picture"/>
+				    <img id="tunnustus_new-02_lobusam" class="templateImage" src="./photos/tunnustus_new-02_lobusam.png" alt="picture"/>
 				  </div>
 				</div>
 				<div class="carousel-item inheritDimension">
 				  <div class="imageContainer">
-				    <img id="tunnustus-03-title" class="templateImage" src="./photos/tunnustus-03.png" alt="picture"/>
+				    <img id="tunnustus_new-03_lobusam" class="templateImage" src="./photos/tunnustus_new-03_lobusam.png" alt="picture"/>
 				  </div>
 				</div>
 			  </div>
-			  <p class="carousel-control-prev" role="button" data-slide="prev">
+			  <p class="carousel-control-prev fun-control-prev" role="button" data-slide="prev">
 				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 				<span class="sr-only">Previous</span>
 			  </p>
-			  <p class="carousel-control-next" href="" role="button" data-slide="next">
+			  <p class="carousel-control-next fun-control-next" href="" role="button" data-slide="next">
 				<span class="carousel-control-next-icon" aria-hidden="true"></span>
 				<span class="sr-only">Next</span>
 			  </p>
+			</div>
+		
+			<div id="carouselSection" class="carousel slide carouselContent inheritDimension carouselSectionElegant" data-ride="carousel" data-interval="false" style="display: none;">
+			  <div class="carousel-inner inheritDimension carousel-elegant">
+				<div class="carousel-item active inheritDimension">
+				  <div class="imageContainer">
+				    <img id="tunnustus_new-01_elegantsem" class="templateImage" src="./photos/tunnustus_new-01_elegantsem.png" alt="picture" class="img-responsive"/>
+				  </div>
+				</div>
+				<div class="carousel-item inheritDimension">
+				  <div class="imageContainer">
+				    <img id="tunnustus_new-02_elegantsem" class="templateImage" src="./photos/tunnustus_new-02_elegantsem.png" alt="picture"/>
+				  </div>
+				</div>
+				<div class="carousel-item inheritDimension">
+				  <div class="imageContainer">
+				    <img id="tunnustus_new-03_elegantsem" class="templateImage" src="./photos/tunnustus_new-03_elegantsem.png" alt="picture"/>
+				  </div>
+				</div>
+			  </div>
+			  <p class="carousel-control-prev elegant-control-prev" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			  </p>
+			  <p class="carousel-control-next elegant-control-next" href="" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			  </p>
+			</div>
+		
+		  </div>
+		  <div class="buttonDivTemplate" align="center">
+		    <p>Vajuta allolevale nupule, et valida kas lõbus või elegantne disain</p>
+			<div>
+		      <button id="funDesign" type="button" class="templateSelection selected">Lõbus disain</button>
+			  <button id="elegantDesign" type="button" class="templateSelection">Elegantne disain</button>
 			</div>
 		  </div>
 		  <div class="buttonDiv">
@@ -77,23 +126,22 @@
 
 		<div class="mySlides ">
 		  <div class="slideTitle" align="center">
-			<img class="bannerElement" src="./photos/cv_tunnustus_logo-01.png" alt="Logo" />
+			<img class="bannerElement" src="./photos/cv_tunnustus_logo-01_new.png" alt="Logo" />
 			<!--
 			<img class="slideTitleElement companyLogo" src="./photos/cv_logo-01.png" alt="Logo" />
 			<p class="slideTitleElement companyElement">CV.ee</p>
 			<p class="slideTitleElement activityElement">#tunnustakolleegi</p>
 			-->
 		  </div>
-		  <div class="stepNumber" align="center">2 / 5</div>
+		  <div class="stepNumber" align="center">Samm 2/5</div>
 		  <div class="actionText" align="center">
-			<p>Kirjuta siia lahtrisse ettevõtte nimi,
-				kus tunnustamist väärt kolleeg töötab
+			<p>Kirjuta lahtrisse ettevõtte nimi, kus tunnustust vääriv kolleeg töötab
 			</p>
 		  </div>
 		  <div class="contentSection" align="center">
-		    <input type="text" class="form-group companyInput" maxLength="15" placeholder="Ettevõtte nimi"/>
+		    <input type="text" class="form-group companyInput" maxLength="22" placeholder="Ettevõtte nimi"/>
 		    <div class="inheritDimension inputNote">
-				<p>PS! Maksimum tähemärkide arv on 15</p>
+				<p>PS! Maksimum tähemärkide arv on 22</p>
 			</div>
 		  </div>
 		  <div class="buttonDiv">
@@ -103,18 +151,16 @@
 		
 		<div class="mySlides ">
 		  <div class="slideTitle" align="center">
-			<img class="bannerElement" src="./photos/cv_tunnustus_logo-01.png" alt="Logo" />
+			<img class="bannerElement" src="./photos/cv_tunnustus_logo-01_new.png" alt="Logo" />
 			<!--
 			<img class="slideTitleElement companyLogo" src="./photos/cv_logo-01.png" alt="Logo" />
 			<p class="slideTitleElement companyElement">CV.ee</p>
 			<p class="slideTitleElement activityElement">#tunnustakolleegi</p>
 			-->
 		  </div>
-		  <div class="stepNumber" align="center">3 / 5</div>
+		  <div class="stepNumber" align="center">Samm 3/5</div>
 		  <div class="actionText" align="center">
-			<p>Kirjuta siia lahtrisse kolleegi nimi,
-				keda soovid tunnustada
-			</p>
+			<p>Kirjuta lahtrisse kolleegi nimi, keda soovid kuldsüdamega tunnustad</p>
 		  </div>
 		  <div class="contentSection" align="center">
 		    <input type="text" class="form-group nameInput" maxLength="35" placeholder="Ees- ja perekonnanimi"/>
@@ -129,17 +175,16 @@
 		
 		<div class="mySlides ">
 		  <div class="slideTitle" align="center">
-			<img class="bannerElement" src="./photos/cv_tunnustus_logo-01.png" alt="Logo" />
+			<img class="bannerElement" src="./photos/cv_tunnustus_logo-01_new.png" alt="Logo" />
 			<!--
 			<img class="slideTitleElement companyLogo" src="./photos/cv_logo-01.png" alt="Logo" />
 			<p class="slideTitleElement companyElement">CV.ee</p>
 			<p class="slideTitleElement activityElement">#tunnustakolleegi</p>
 			-->
 		  </div>
-		  <div class="stepNumber" align="center">4 / 5</div>
+		  <div class="stepNumber" align="center">Samm 4/5</div>
 		  <div class="actionText" align="center">
-			<p>Kirjuta siia lahtrisse, miks su kolleeg
-				on ära teeninud selle tunnustuse</p>
+			<p>Kirjuta lühidalt lahtrisse, miks su kolleeg on ära teeninud kuldsüdame </p>
 		  </div>
 		  <div class="contentSection textAreaSection" align="center">		    
 			<textarea rows="4" cols="50" class="form-group titleOf textAreaInput" maxLength="200"> 
@@ -149,6 +194,13 @@
 				<p>PS! Maksimum tähemärkide arv on 200</p>
 			</div>
 		  </div>
+		  <div class="" align="center">
+		    <p>Kirjuta lahtrisse tunnustaja nimi</p>
+		    <input type="text" class="form-group nameInput" maxLength="22" placeholder="Ees- ja perekonnanimi"/>
+			<div class="inheritDimension inputNote">
+			  <p>PS! Maksimum tähemärkide arv on 22</p>
+			</div>
+		  </div>
 		  <div class="buttonDiv">
 			<button id="5" type="button" class="generatePicture forwardButton">Genereeri pilt</button>
 		  </div>
@@ -156,7 +208,7 @@
 		
 		<div class="mySlides ">
 		  <div class="slideTitle" align="center">
-			<img class="bannerElement" src="./photos/cv_tunnustus_logo-01.png" alt="Logo" />
+			<img class="bannerElement" src="./photos/cv_tunnustus_logo-01_new.png" alt="Logo" />
 			<!--
 			<img class="slideTitleElement companyLogo" src="./photos/cv_logo-01.png" alt="Logo" />
 			<p class="slideTitleElement companyElement">CV.ee</p>
@@ -185,13 +237,13 @@
 	<script src="./scripts/bootstrap/js/bootstrap.min.js"></script>
 	<script>
 	$(document).ready(function(){
-		
+				
+		var selectedDesign = 'funDesign';
 		var canvas = document.getElementById('templateCanvas'),
 		    ctx = canvas.getContext('2d');
 		var background = new Image();	
 		
 		function saveImageToServer(dataUrl, id){
-		  console.log('starting to save');
 		  $.ajax({
 			type: 'POST',
 			url: './scripts/SaveImage.php',
@@ -213,12 +265,28 @@
 		  var selectedImage;
 		  var id = parseInt($(this).attr('id'));
 		  
-		  $('.carousel-item').each(function(i){
-		    if($(this).hasClass('active')){
-			  selectedImage = $(this).find('img');
-			}
-		  });
+		  switch(selectedDesign){
+		    case 'funDesign':
+			  var imgElements = $('.carousel-fun').children();
 		  
+			  imgElements.each(function(i){
+				if($(this).hasClass('active')){
+				  selectedImage = $(this).find('img');
+				} 
+			  });
+			  break;
+			case 'elegantDesign':
+			  var imgElements = $('.carousel-elegant').children();
+		  
+			  imgElements.each(function(i){
+				if($(this).hasClass('active')){
+				  selectedImage = $(this).find('img');
+				} 
+			  });
+			  console.log(selectedImage);
+			  break;
+		  }
+		  		  
 		  var image = new Image();
 		  
 		  image.onload = function(){
@@ -226,37 +294,59 @@
 			ctx.canvas.width = this.width;
 		    ctx.canvas.height = this.height;
 		  		  
-		    background.src = './photos/'+ selectedImage[0]['id'] + '.png';
-		    background.onload = function(){
+			console.log(selectedImage);
+				  
+		    background.src = './photos/tyhi_'+ selectedImage[0]['id'] + '.png';
+		    
+			background.onload = function(){
 		      ctx.drawImage(background,0,0);   
+			
+			  switch(selectedDesign){
+				case 'funDesign':
+				  ctx.fillStyle = "#244999";			  
+				  ctx.font = "bold 40px arial";
+				  ctx.fillText($('.companyInput').val(), 495, 285);
+				  ctx.font = "bold 40px arial";
+				  ctx.fillText($('.nameInput').val(), 495, 535);  
+				  break;
+				case 'elegantDesign':
+				  ctx.fillStyle = "white";			  
+				  ctx.font = "bold 40px arial";
+				  ctx.fillText($('.companyInput').val(), 515, 195);
+				  ctx.font = "bold 40px arial";
+				  ctx.fillText($('.nameInput').val(), 515, 485);
+				  break;
+			  }
+			
 			  
-			  ctx.fillStyle = "white";
-			  
-			  ctx.font = "bold 40px arial";
-			  ctx.fillText($('.companyInput').val(), 500, 150);
-			  ctx.font = "40px arial";
-			  ctx.fillText($('.nameInput').val(), 500, 500);
-			  //font = "30px arial";
-			  //ctx.fillText($('.titleOf').val(), 570, 450);
 		    
 			  saveImageToServer(canvas.toDataURL(), id);
 			}			
 		  };
 		  
+		  console.log(image);
+		  
 		  image.src = selectedImage[0]['src'];
 		  	
 		});
 		
-		$('.carousel-control-prev').on('click', function(){
-		  $('#carouselSection').carousel('prev');
+		$('.fun-control-prev').on('click', function(){
+		  $('.carouselSectionFun').carousel('prev');
 		});
 		
-		$('.carousel-control-next').on('click', function(){
-		  $('#carouselSection').carousel('next');
+		$('.fun-control-next').on('click', function(){
+		  $('.carouselSectionFun').carousel('next');
+		});
+
+		$('.elegant-control-prev').on('click', function(){
+		  $('.carouselSectionElegant').carousel('prev');
+		});
+		
+		$('.elegant-control-next').on('click', function(){
+		  $('.carouselSectionElegant').carousel('next');
 		});
 		
 		$('.templateImage').on('load', function(){
-			console.log('boi');
 		  var css;
 		  var ratio=$(this).width() / $(this).height();
 		  var pratio=$(this).parent().width() / $(this).parent().height();
@@ -294,12 +384,32 @@
 		  var id = parseInt($(this).attr('id'));
 		  currentSlide(id+1);
 	  });
+	  
+	  $('.templateSelection').on('click', function(){
+		if($(this).attr('id') == 'funDesign'){
+		  selectedDesign = 'funDesign';
+		  		  
+		  $('#funDesign').addClass('selected');
+		  $('#elegantDesign').removeClass('selected');
+			
+		  $('.carouselSectionFun').show();
+		  $('.carouselSectionElegant').hide();
+		}
+		
+		if($(this).attr('id') == 'elegantDesign'){
+		  selectedDesign = 'elegantDesign';
+		  
+		  $('#funDesign').removeClass('selected');
+		  $('#elegantDesign').addClass('selected');
+		  
+		  $('.carouselSectionFun').hide();
+		  $('.carouselSectionElegant').show();
+		}
+	  });
 	
 	  $('#shareToFacebook').on('click', function(){
 		var pictureLocation = $('#generatedPicture').attr('src');
 	    pictureLocation = window.location+pictureLocation.replace('.', '');
-		
-		console.log(pictureLocation);
 		
 		FB.ui({
 			method: 'share',
