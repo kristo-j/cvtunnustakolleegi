@@ -177,6 +177,18 @@ img {vertical-align: middle;}
   padding-top: 10px;
 }
 
+.creatorSection{
+  width: 100%;
+  min-height: 190px;
+  height: auto;
+  margin: auto;
+  padding-bottom: 30px;
+  display: block;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10px;
+}
+
 .textAreaSection{
   padding-top: 10px;
 }
@@ -190,6 +202,7 @@ img {vertical-align: middle;}
   border-radius: 8px;
   font-size: 30px;
   border: 1px solid #ccc;
+  resize: none;
 }
 
 .photoSection{
@@ -305,7 +318,7 @@ img {vertical-align: middle;}
   padding: 12px 20px;
   margin: 30px 0;
   display: inline-block;
-  height: 70px;
+  height: 90px;
   border-radius: 8px;
   font-size: 30px;
   border: 1px solid #ccc;
@@ -316,7 +329,7 @@ img {vertical-align: middle;}
   padding: 12px 20px;
   margin: 30px 0;
   display: inline-block;
-  height: 70px;
+  height: 90px;
   border-radius: 8px;
   font-size: 30px;
   border: 1px solid #ccc;
@@ -327,7 +340,18 @@ img {vertical-align: middle;}
   padding: 12px 20px;
   margin: 30px 0;
   display: inline-block;
-  height: 70px;
+  height: 90px;
+  border-radius: 8px;
+  font-size: 30px;
+  border: 1px solid #ccc;
+}
+
+.creatorInput{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 30px 0;
+  display: inline-block;
+  height: 90px;
   border-radius: 8px;
   font-size: 30px;
   border: 1px solid #ccc;
@@ -336,7 +360,8 @@ img {vertical-align: middle;}
 .forwardButton, .shareButton{
   min-width: 210px;
   width: 40%;
-  height: 70px;
+  min-height: 70px;
+  height: auto;
   background-color: #244999;
   border-color: #244999;
   color: white;
@@ -364,16 +389,29 @@ img {vertical-align: middle;}
   margin: 5px 5px;
 }
 
-.templateSection:hover{
-  background-color: #496bb3;
+.templateSelection:hover{
+  background-color: #1790e4;
 }
 
 .selected{
-  background-color: #308dce;
+  background-color: #1790e4;
 }
 
 .forwardButton:hover{
   background-color: #20489d;
+}
+
+.borderStyle{
+  border: 2px solid #244999;
+}
+
+.form-group{
+  text-align: center;
+  color: #244999;
+}
+
+.form-group::placeholder{
+  color: #244999;
 }
 
 @media only screen and (max-width: 400px) {
@@ -395,6 +433,67 @@ img {vertical-align: middle;}
   }
   
   .actionText{
+	font-weight: 700;
 	font-size: 19px;
+  }
+  
+  .inputNote{
+    font-size: 15px;
+	font-weight: 500;
+  }
+  
+  .form-group::placeholder{
+    color: #244999;
+	font-size: 25px;
+  }
+  
+  .form-group{
+    font-size: 25px;
+  }
+  
+  #sendToPrint, #shareToFacebook{
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .actionLine{
+    font-size: 40px;
+  }
+  
+  .informationLine{
+	font-size: 21px;
+  }
+  
+  .buttonDiv{
+    padding-left: 10%;
+	padding-right: 10%;
+  }
+  
+  .forwardButton{
+	width: 80%;
+  }
+  
+  .actionText{
+	font-weight: 700;
+	font-size: 21px;
+  }
+  
+  .inputNote{
+    font-size: 17px;
+	font-weight: 500;
+  }
+  
+  .form-group::placeholder{
+    color: #244999;
+	font-size: 27px;
+  }
+  
+  .form-group{
+    font-size: 27px;
+  }
+  
+  #sendToPrint, #shareToFacebook{
+    width: 80%;
   }
 }

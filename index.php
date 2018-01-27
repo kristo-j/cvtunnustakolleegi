@@ -139,7 +139,7 @@
 			</p>
 		  </div>
 		  <div class="contentSection" align="center">
-		    <input type="text" class="form-group companyInput" maxLength="22" placeholder="Ettevõtte nimi"/>
+		    <input type="text" class="form-group companyInput borderStyle" maxLength="22" placeholder="Ettevõtte nimi"/>
 		    <div class="inheritDimension inputNote">
 				<p>PS! Maksimum tähemärkide arv on 22</p>
 			</div>
@@ -163,7 +163,7 @@
 			<p>Kirjuta lahtrisse kolleegi nimi, keda soovid kuldsüdamega tunnustad</p>
 		  </div>
 		  <div class="contentSection" align="center">
-		    <input type="text" class="form-group nameInput" maxLength="35" placeholder="Ees- ja perekonnanimi"/>
+		    <input type="text" class="form-group nameInput borderStyle" maxLength="35" placeholder="Ees- ja perekonnanimi"/>
 			<div class="inheritDimension inputNote">
 				<p>PS! Maksimum tähemärkide arv on 35</p>
 			</div>
@@ -187,22 +187,20 @@
 			<p>Kirjuta lühidalt lahtrisse, miks su kolleeg on ära teeninud kuldsüdame </p>
 		  </div>
 		  <div class="contentSection textAreaSection" align="center">		    
-			<textarea rows="4" cols="50" class="form-group titleOf textAreaInput" maxLength="200"> 
-			
-			</textarea>
+			<textarea rows="4" cols="50" class="form-group titleOf textAreaInput borderStyle" maxLength="200"></textarea>
 		    <div class="inheritDimension inputNote">
 				<p>PS! Maksimum tähemärkide arv on 200</p>
 			</div>
 		  </div>
-		  <div class="" align="center">
+		  <div class="actionText" align="center">
 		    <p>Kirjuta lahtrisse tunnustaja nimi</p>
-		    <input type="text" class="form-group nameInput" maxLength="22" placeholder="Ees- ja perekonnanimi"/>
+		    <input type="text" class="form-group creatorInput borderStyle" maxLength="22" placeholder="Ees- ja perekonnanimi"/>
 			<div class="inheritDimension inputNote">
 			  <p>PS! Maksimum tähemärkide arv on 22</p>
 			</div>
 		  </div>
 		  <div class="buttonDiv">
-			<button id="5" type="button" class="generatePicture forwardButton">Genereeri pilt</button>
+			<button id="5" type="button" class="generatePicture forwardButton">Genereerin tunnustuse</button>
 		  </div>
 		</div>
 		
@@ -215,13 +213,47 @@
 			<p class="slideTitleElement activityElement">#tunnustakolleegi</p>
 			-->
 		  </div>
-		  <div class="stepNumber" align="center"></div>
-		  <div class="actionText" align="center"><p>Jaga genereeritud pilt oma sõbrale!</p></div>
+		  <div class="stepNumber" align="center">Samm 5/5</div>
+		  <div class="actionText" align="center">
+		    <p>Üllata nüüd enda kolleegi ja
+			   postita kuldsüdamega tunnustus
+			   tema Facebooki seinale. 
+			</p>
+		  </div>
 		  <div class="photoSection finishSection" align="center">
 
 		  </div>
 		  <div class="buttonDiv">
-			<button id="shareToFacebook" type="button" class="shareButton">Jagan facebookis</button>
+			<button id="shareToFacebook" type="button" class="shareButton">Tunnustan kolleegi</button>
+		  </div>
+		</div>
+		
+		<div class="mySlides orderSlide">
+		  <div class="slideTitle" align="center">
+			<img class="bannerElement" src="./photos/cv_tunnustus_logo-01_new.png" alt="Logo" />
+			<!--
+			<img class="slideTitleElement companyLogo" src="./photos/cv_logo-01.png" alt="Logo" />
+			<p class="slideTitleElement companyElement">CV.ee</p>
+			<p class="slideTitleElement activityElement">#tunnustakolleegi</p>
+			-->
+		  </div>
+		  <div class="stepNumber" align="center"></div>
+		  <div class="actionText" align="center">
+			<p>CV.ee tänab Sind südamest, et leidsid aega
+			   tunnustuse valmistegemiseks. 
+			</p>
+		  </div>
+		  <div class="orderPhotoSection orderFinishSection" align="center">
+			<img src="" alt="siia_tuleb_pilt" />
+		  </div>
+		  <div class="actionText" align="center">
+			<p>Ja kui soovid ekstra enda kolleegi üllatada,
+			   siis telli käega katsutav südamekujuline
+			   tunnustus, mille saadame soovitud aadressile! 
+			</p>
+		  </div>
+		  <div class="buttonDiv">
+			<button id="sendToPrint" type="button" class="forwardButton addPersonName">Tellin tunnustuse</button>
 		  </div>
 		</div>
 		
@@ -373,7 +405,7 @@
 		  if (n > slides.length) {slideIndex = 1}    
 		  if (n < 1) {slideIndex = slides.length}
 		  for (i = 0; i < slides.length; i++) {
-			  slides[i].style.display = "none";  
+			slides[i].style.display = "none";  
 		  }
 
 		  slides[slideIndex-1].style.display = "block";  
@@ -414,7 +446,11 @@
 		FB.ui({
 			method: 'share',
 			href: pictureLocation,
-		}, function(response){});
+		}, function(response){
+			if (response && !response.error_message) {
+			  currentSlide(7);
+			}
+		});
 	    
 	  });
 		
