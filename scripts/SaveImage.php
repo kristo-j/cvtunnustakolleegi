@@ -10,5 +10,5 @@
 	
 	$success = file_put_contents($file, $data);
 	
-	echo './tunnustused/'.$filename;
+	echo $filename;
 ?>

@@ -39,10 +39,34 @@ img {vertical-align: middle;}
   border-radius: 0 3px 3px 0;
 }
 
+.modal-footer-block{
+  display: block; !important
+}
+
+#confirmationCheckbox{
+  width: 20px;
+  height: 20px;
+}
+
+#modalCheck, #modalInfo{
+  float: left;
+}
+
+.selectStyleList{
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  height: auto;
+  border-radius: 8px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  margin-bottom: 1em;
+}
+
 .slideTitle {
   display: inline-block;
   background-color: white;
-  min-height: 10%;
+  min-height: 5%;
   height: auto;
   width: 100%;
   padding-left: 25%;
@@ -96,7 +120,7 @@ img {vertical-align: middle;}
   height: auto;
   width: 100%;
   text-align: center;
-  padding-top: 0px;
+  padding-top: 5em;
   padding-left: 20%;
   padding-right: 20%;
 }
@@ -167,7 +191,7 @@ img {vertical-align: middle;}
 
 .contentSection{
   width: 100%;
-  min-height: 35%;
+  /*min-height: 35%;*/
   height: auto;
   margin: auto;
   padding-bottom: 30px;
@@ -203,29 +227,31 @@ img {vertical-align: middle;}
   font-size: 30px;
   border: 1px solid #ccc;
   resize: none;
+  text-align: left;
+  color: #244999;
 }
 
 .photoSection{
   width: 100%;
-  min-height: 60%;
+  /*min-height: 35%;*/
   height: auto;
   margin: auto;
   padding-bottom: 15px;
   display: block;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .templateSection{
   width: 100%;
-  min-height: 40%;
+  /*min-height: 30%;*/
   height: auto;
   margin: auto;
   padding-top: 30px;
   padding-bottom: 30px;
   display: block;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .carouselSlide{
@@ -245,10 +271,11 @@ img {vertical-align: middle;}
   height: auto;
   padding-left: 10%;
   padding-right: 10%;
-  font-size: 61px;
+  font-size: 51px;
   margin-top: 10px;
   color: #244999;
   font-weight: bold;
+  line-height: 1.2;
 }
 
 .inputNote{
@@ -278,12 +305,26 @@ img {vertical-align: middle;}
   height: auto;
   font-size: x-large;
   color: black;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 20%;
+  padding-right: 20%;
   margin-top: 15px;
 }
-
+  
 .actionText{
+  display: block;
+  width: 100%;
+  min-height: 10%;
+  height: auto;
+  font-size: 37px;
+  font-weight: 400;
+  color: black;
+  padding-left: 18%;
+  padding-right: 18%;
+  margin-top: 15px;
+  line-height: 1.2;
+}
+
+.creatorActionText{
   display: block;
   width: 100%;
   min-height: 10%;
@@ -297,8 +338,8 @@ img {vertical-align: middle;}
 }
 
 .inheritDimension{
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .templateImage{
@@ -308,10 +349,23 @@ img {vertical-align: middle;}
 }
 
 .imageContainer{
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
+  width: 100%;
+  height: 100%;
 }
+
+p.carousel-control-prev.elegant-control-prev ,
+p.carousel-control-next.elegant-control-next ,
+p.carousel-control-prev.fun-control-prev ,
+p.carousel-control-next.fun-control-next{
+  width: 10%;
+}
+
+span.carousel-control-prev-icon,
+span.carousel-control-next-icon{
+  width: 80%;
+  height: 80%;
+}
+	
 
 .companyInput{
   width: 100%;
@@ -357,6 +411,42 @@ img {vertical-align: middle;}
   border: 1px solid #ccc;
 }
 
+.modalInput{
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  height: auto;
+  border-radius: 8px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  margin-bottom: 1em;
+  font-size: 25px;
+}
+
+.modalInput::placeholder{
+  font-size: 25px;
+}
+
+.modalTextArea{  
+  text: 2em;
+  height: 6em; 
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  display: inline-block;
+  border-radius: 8px;
+  font-size: 30px;
+  border: 1px solid #ccc;
+  resize: none;
+  text-align: left;
+  color: #244999;
+}
+
+#confirmationChechbox{
+  width: 30px;
+  height: 30px;
+}
+
 .forwardButton, .shareButton{
   min-width: 210px;
   width: 40%;
@@ -374,9 +464,31 @@ img {vertical-align: middle;}
   padding-bottom: 10px;
 }
 
-.templateSelection{
+.finishButton{
   min-width: 210px;
-  width: 30%;
+  width: 80%;
+  min-height: 70px;
+  height: auto;
+  background-color: #244999;
+  border-color: #244999;
+  color: white;
+  border-radius: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 8px;
+}
+
+.finishButton:hover{
+  background-color: #548aff;
+}
+
+.templateSelection{
+  /*min-width: 210px;*/
+  width: auto;
   height: 50px;
   background-color: #517ad2;
   border-color: #517ad2;
@@ -398,14 +510,18 @@ img {vertical-align: middle;}
 }
 
 .forwardButton:hover{
-  background-color: #20489d;
+  background-color: #548aff;
 }
 
 .borderStyle{
   border: 2px solid #244999;
 }
 
-.form-group{
+.errorBorderStyle{
+  border: 2px solid red;
+}
+
+input{
   text-align: center;
   color: #244999;
 }
@@ -414,16 +530,51 @@ img {vertical-align: middle;}
   color: #244999;
 }
 
+.checkBoxSection{
+  font-size: 11px;
+  display: inline-block;
+}
+
+.form-group{
+  width: 80%;
+}
+
+.textMarker{
+  background-color: white;
+  color: #244999;
+  font-weight: 700;
+}
+
+.modalSelect{
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  height: auto;
+  border-radius: 8px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  margin-bottom: 1em;
+  font-size: 25px;
+}
+
+.selectTitle{
+  font-size: 18px;
+  font-weight: 500;
+}
+
 @media only screen and (max-width: 400px) {
   .actionLine{
-    font-size: 37px;
+    font-size: 30px;
+	line-height: 1.2;
   }
   
   .informationLine{
-	font-size: 19px;
+	font-size: 15px;
+	padding-left: 5%;
+	padding-right: 5%
   }
   
-  .buttonDiv{
+  .buttonDiv, .orderFinishSection{
     padding-left: 10%;
 	padding-right: 10%;
   }
@@ -435,11 +586,22 @@ img {vertical-align: middle;}
   .actionText{
 	font-weight: 700;
 	font-size: 19px;
+	padding-left: 10%;
+	padding-right: 10%;
+  }
+  
+  .creatorActionText{
+	font-weight: 700;
+	font-size: 19px;
+	padding-left: 10%;
+	padding-right: 10%;  
   }
   
   .inputNote{
     font-size: 15px;
 	font-weight: 500;
+	padding-left: 10%;
+	padding-right; 10%;
   }
   
   .form-group::placeholder{
@@ -449,20 +611,34 @@ img {vertical-align: middle;}
   
   .form-group{
     font-size: 25px;
+	width: 100%;
   }
   
   #sendToPrint, #shareToFacebook{
     width: 80%;
   }
+  
+  .photoSection{
+	padding-left: 5%;
+	padding-right: 5%;
+  }
+  
+  .templateSection{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .actionLine{
-    font-size: 40px;
+    font-size: 30px;
+	line-height: 1.2;
   }
   
   .informationLine{
-	font-size: 21px;
+	font-size: 15px;
+	padding-left: 5%;
+	padding-right: 5%
   }
   
   .buttonDiv{
@@ -477,11 +653,22 @@ img {vertical-align: middle;}
   .actionText{
 	font-weight: 700;
 	font-size: 21px;
+	padding-left: 10%;
+	padding-right: 10%;
+  }
+  
+  .creatorActionText{
+	font-weight: 700;
+	font-size: 21px;
+	padding-left: 10%;
+	padding-right: 10%;  
   }
   
   .inputNote{
     font-size: 17px;
 	font-weight: 500;
+	padding-left: 10%;
+	padding-right; 10%;
   }
   
   .form-group::placeholder{
@@ -491,9 +678,34 @@ img {vertical-align: middle;}
   
   .form-group{
     font-size: 27px;
+    width: 100%;
   }
   
   #sendToPrint, #shareToFacebook{
     width: 80%;
+  }
+  
+  .photoSection{
+	padding-left: 5%;
+	padding-right: 5%;
+  }
+  
+  .templateSection{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .informationLine{
+	font-size: 15px;
+	padding-left: 5%;
+	padding-right: 5%
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .bannerElement{
+    width: 60%;
   }
 }
