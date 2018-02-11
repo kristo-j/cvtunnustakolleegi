@@ -29,13 +29,39 @@
 				kui kiitmise tunne peale tuleb. <mark class="textMarker">Võta 5 minutit</mark>, et tunnustada kolleegi kuldsüdamega, 
 				edastades sobiva tiitli tema <mark class="textMarker">Facebooki</mark> seinale või e-mailile.
 			  </p>
+			  <p class="examplesText">
+			    Vaata erinevaid näidiseid
+			  </p>
 			</div>
 		  </div>
 		  <div class="photoSection" align="center">
-			<img class="inheritDimension" src="./photos/Tunnustus1.jpg" alt="cv.ee Logo" />
-		  </div>
-		  <div class="photoSection" align="center">
-			<img class="inheritDimension" src="./photos/Tunnustus2.jpg" alt="cv.ee Logo" />
+			<div id="carouselSection" class="carousel slide carouselContent exampleCarousel" data-ride="carousel" data-interval="false" style="display: none;">
+			  <div class="carousel-inner">
+				<div class="carousel-item active ">
+				  <div class="imageContainer">
+				    <img id="" class="imageContainer" src="./photos/tunnustus_n2idis_1.jpg" alt="picture" class="img-responsive"/>
+				  </div>
+				</div>
+			    <div class="carousel-item">
+			      <div class="imageContainer">
+				    <img id="" class="imageContainer" src="./photos/tunnustus_n2idis_2.jpg" alt="picture" class="img-responsive"/>
+				  </div>
+			    </div>
+			    <div class="carousel-item">
+			      <div class="imageContainer">
+				    <img id="" class="imageContainer" src="./photos/tunnustus_n2idis_3.jpg" alt="picture" class="img-responsive"/>
+			      </div>
+			    </div>
+			  </div>
+			  <p class="carousel-control-prev example-control-prev" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			  </p>
+			  <p class="carousel-control-next example-control-next" href="" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			  </p>
+		    </div>
 		  </div>
 		  <div class="buttonDiv">
 		    <button id="1" type="button" class="forwardButton">Alustan</button>
@@ -53,7 +79,7 @@
 		  </div>
 		  <div class="stepNumber" align="center">Samm 1/5</div>
 		  <div class="actionText" align="center">
-		    <p>Vali sobiv kuldsüda 18 erineva tiitli hulgast vajutades noolt paremale või vasakule</p>
+		    <p>Vali sobiv kuldsüda 10 erineva tiitli hulgast, vajutades noolt paremale või vasakule</p>
 		  </div>
 		  
 		  <div class="templateSection" align="center">
@@ -61,17 +87,52 @@
 			  <div class="carousel-inner carousel-fun">
 				<div class="carousel-item active ">
 				  <div class="imageContainer">
-				    <img id="tunnustus_new-01_lobusam" class="templateImage" src="./photos/tunnustus_new-01_lobusam.png" alt="picture" class="img-responsive"/>
+				    <img id="" class="imageContainer" src="./photos/L6bus_tunnustus-01.png" alt="picture" class="img-responsive"/>
 				  </div>
 				</div>
 				<div class="carousel-item ">
 				  <div class="imageContainer">
-				    <img id="tunnustus_new-02_lobusam" class="templateImage" src="./photos/tunnustus_new-02_lobusam.png" alt="picture"/>
+				    <img id="" class="imageContainer" src="./photos/L6bus_tunnustus-02.png" alt="picture"/>
 				  </div>
 				</div>
 				<div class="carousel-item ">
 				  <div class="imageContainer">
-				    <img id="tunnustus_new-03_lobusam" class="templateImage" src="./photos/tunnustus_new-03_lobusam.png" alt="picture"/>
+				    <img id="" class="imageContainer" src="./photos/L6bus_tunnustus-03.png" alt="picture"/>
+				  </div>
+				</div>
+				<div class="carousel-item ">
+				  <div class="imageContainer">
+				    <img id="" class="imageContainer" src="./photos/L6bus_tunnustus-04.png" alt="picture"/>
+				  </div>
+				</div>
+				<div class="carousel-item ">
+				  <div class="imageContainer">
+				    <img id="" class="imageContainer" src="./photos/L6bus_tunnustus-05.png" alt="picture"/>
+				  </div>
+				</div>
+				<div class="carousel-item ">
+				  <div class="imageContainer">
+				    <img id="" class="imageContainer" src="./photos/L6bus_tunnustus-06.png" alt="picture"/>
+				  </div>
+				</div>
+				<div class="carousel-item ">
+				  <div class="imageContainer">
+				    <img id="" class="imageContainer" src="./photos/L6bus_tunnustus-07.png" alt="picture"/>
+				  </div>
+				</div>
+				<div class="carousel-item ">
+				  <div class="imageContainer">
+				    <img id="" class="imageContainer" src="./photos/L6bus_tunnustus-08.png" alt="picture"/>
+				  </div>
+				</div>
+				<div class="carousel-item ">
+				  <div class="imageContainer">
+				    <img id="" class="imageContainer" src="./photos/L6bus_tunnustus-09.png" alt="picture"/>
+				  </div>
+				</div>
+				<div class="carousel-item ">
+				  <div class="imageContainer">
+				    <img id="" class="imageContainer" src="./photos/L6bus_tunnustus-10.png" alt="picture"/>
 				  </div>
 				</div>
 			  </div>
@@ -89,17 +150,52 @@
 			  <div class="carousel-inner carousel-elegant">
 				<div class="carousel-item active ">
 				  <div class="imageContainer">
-				    <img id="tunnustus_new-01_elegantsem" class="templateImage" src="./photos/tunnustus_new-01_elegantsem.png" alt="picture" class="img-responsive"/>
+				    <img id="" class="imageContainer" src="./photos/Elegantne_tunnustus-01.png" alt="picture" class="img-responsive"/>
 				  </div>
 				</div>
 				<div class="carousel-item ">
 				  <div class="imageContainer">
-				    <img id="tunnustus_new-02_elegantsem" class="templateImage" src="./photos/tunnustus_new-02_elegantsem.png" alt="picture"/>
+				    <img id="" class="imageContainer" src="./photos/Elegantne_tunnustus-02.png" alt="picture"/>
 				  </div>
 				</div>
 				<div class="carousel-item ">
 				  <div class="imageContainer">
-				    <img id="tunnustus_new-03_elegantsem" class="templateImage" src="./photos/tunnustus_new-03_elegantsem.png" alt="picture"/>
+				    <img id="" class="imageContainer" src="./photos/Elegantne_tunnustus-03.png" alt="picture"/>
+				  </div>
+				</div>
+				<div class="carousel-item ">
+				  <div class="imageContainer">
+				    <img id="" class="imageContainer" src="./photos/Elegantne_tunnustus-04.png" alt="picture"/>
+				  </div>
+				</div>
+				<div class="carousel-item ">
+				  <div class="imageContainer">
+				    <img id="" class="imageContainer" src="./photos/Elegantne_tunnustus-05.png" alt="picture"/>
+				  </div>
+				</div>
+				<div class="carousel-item ">
+				  <div class="imageContainer">
+				    <img id="" class="imageContainer" src="./photos/Elegantne_tunnustus-06.png" alt="picture"/>
+				  </div>
+				</div>
+				<div class="carousel-item ">
+				  <div class="imageContainer">
+				    <img id="" class="imageContainer" src="./photos/Elegantne_tunnustus-07.png" alt="picture"/>
+				  </div>
+				</div>
+				<div class="carousel-item ">
+				  <div class="imageContainer">
+				    <img id="" class="imageContainer" src="./photos/Elegantne_tunnustus-08.png" alt="picture"/>
+				  </div>
+				</div>
+				<div class="carousel-item ">
+				  <div class="imageContainer">
+				    <img id="" class="imageContainer" src="./photos/Elegantne_tunnustus-09.png" alt="picture"/>
+				  </div>
+				</div>
+				<div class="carousel-item ">
+				  <div class="imageContainer">
+				    <img id="" class="imageContainer" src="./photos/Elegantne_tunnustus-10.png" alt="picture"/>
 				  </div>
 				</div>
 			  </div>
@@ -162,12 +258,12 @@
 		  </div>
 		  <div class="stepNumber" align="center">Samm 3/5</div>
 		  <div class="actionText" align="center">
-			<p>Kirjuta lahtrisse kolleegi nimi, keda soovid kuldsüdamega tunnustad</p>
+			<p>Kirjuta lahtrisse kolleegi nimi, keda soovid kuldsüdamega tunnustada</p>
 		  </div>
 		  <div class="contentSection" align="center">
-		    <input type="text" class="form-group nameInput borderStyle" maxLength="35" placeholder="Ees- ja perekonnanimi"/>
+		    <input type="text" class="form-group nameInput borderStyle" maxLength="24" placeholder="Ees- ja perekonnanimi"/>
 			<div class=" inputNote">
-				<p>PS! Maksimum tähemärkide arv on 35</p>
+				<p>PS! Maksimum tähemärkide arv on 24</p>
 			</div>
 		  </div>
 		  <div class="buttonDiv">
@@ -225,6 +321,13 @@
 		  <div class="photoSection finishSection" align="center">
 
 		  </div>
+		  <div class="facebookTutorialDiv" align="center">
+		    <img class="facebookTutImg" src="./photos/FacebookInfo.png"/>
+			<p class="tutorialText">
+			   <mark class="textMarker">PS!</mark> Facebooki postituse akna avamisel vali rippmenüüst, 
+			   et soovid jagada postitust <mark class="textMarker">sõbra ajajoonele</mark> ning märgi 
+			   sinna kolleegi nimi, keda tunnustad.</p>
+		  </div>
 		  <div class="buttonDiv">
 			<button id="shareToFacebook" type="button" class="shareButton">Tunnustan facebookis</button>
 		    <button id="sendEmailModal" type="button" class="shareButton" data-toggle="modal" data-target=".sendEmailModal">Tunnustan e-mailiga</button>
@@ -247,14 +350,22 @@
 			</p>
 		  </div>
 		  <div class="photoSection" align="center">
-			<img src="./photos/PurchasePaper.png" alt="" />
+			<img class="imageContainer" src="./photos/Meene.jpg" alt="" />
 		  </div>
-		  <div class="buttonDiv">
-		    <button id="sendToPrint" type="button" class="forwardButton" data-toggle="modal" data-target=".sendOrderModal">Tellin tunnustuse</button>
+		  <div class="orderDiv">
+		    <p class="orderText">
+			   Üllata kolleegi ka tõelise kuldse meenega, tänu millele toetad 
+			   x-organisatsiooni kolme euri väärtuses.</p>
+		    <button id="sendToPrint" type="button" class="orderButton" data-toggle="modal" data-target=".sendOrderModal">Tellin tunnustuse</button>
 		  </div>
 		  <div class="buttonDiv">
 			<button id="generateNew" type="button" class="finishButton">Genereerin uue tunnustuse</button>
-			<button id="checkJobOffers" type="button" class="finishButton">Vaata tööpakkumisi</button>
+			<!--<button id="checkJobOffers" type="button" class="finishButton">Vaata tööpakkumisi</button>-->
+		  </div>
+		  <div class="footerDiv">
+		    <a href="https://www.cv.ee/toopakkumised">
+		      <img class="imageContainer" src="./photos/FooterImage.jpg" alt="" />
+		    </a>
 		  </div>
 		</div>
 		
@@ -293,7 +404,7 @@
 			</div>
 		  </div>
 		  <div class="modal-footer modal-footer-block" align="center">
-			<button id="sendToEmail" type="submit" class="shareButton">Saada e-mail</button>
+			<button id="sendToEmail" type="submit" class="modalShareButton">Saada e-mail</button>
 		  </div>
 		</div>
 	  </div>
@@ -302,14 +413,17 @@
 	<div class="modal fade sendOrderModal" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
 	  <div class="modal-dialog" role="document">
 		<div class="modal-content">
-		  <div class="modal-header">
-			<h5 class="modal-title" id="">Meene tellimus</h5>
-			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  <div class="modal-header orderHeader">
+		    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 			  <span aria-hidden="true">&times;</span>
 			</button>
-			<p>Meene toob sinu Kolleegini trükikoda Grano</p>
+			<img class="imageContainer logoContainer" src="./photos/Grano_logo.png" alt="Grano logo" />
 		  </div>
 		  <div class="modal-body">
+		    <div class="orderModalTitle" align="center">
+			  <p>Meene toob sinu Kolleegini trükikoda Grano</p>
+			  <img class="imageContainer" src="./photos/Meene_imago_new.jpg" alt="Meene imago" />
+			</div>
 			<div>
 			  <h4>Täida lahtrid</h4>
 			  <input id="orderName" name="senderName" type="text" class="borderStyle modalInput" maxLength="40" placeholder="Sinu ees- ja perekonnanimi"/>
@@ -317,10 +431,10 @@
 			  <input id="orderPhoneNr" type="text" class="borderStyle modalInput" maxLength="40" placeholder="Sinu telefoni nr"/>
 			</div>
 			<div>
-			  <p class="selectTitle" align="center">tasumine</p>
+			  <p class="selectTitle" align="center">Tasumine</p>
 			  <select class="selectListStyle paymenyList borderStyle modalSelect">
 			    <option>Kohapeal</option>
-				<option>Arve</option>
+				<option>Arvega</option>
 			  </select>
 			</div>
 			<div>
@@ -330,9 +444,12 @@
 				<option>Postiga(+ 3.99 EUR)</option>
 			  </select>
 			</div>
+			<div class="noticeText">
+			  <p align="center">Tellimusele vastame tööpäevadel 48h jooksul.</p>
+			</div>
 		  </div>
 		  <div class="modal-footer modal-footer-block" align="center">
-			<button id="confirmOrder" type="button" class="shareButton">Esitan tellimuse</button>
+			<button id="confirmOrder" type="button" class="modalShareButton">Esitan tellimuse</button>
 		  </div>
 		</div>
 	  </div>
@@ -422,7 +539,8 @@
 			ctx.canvas.width = this.width;
 		    ctx.canvas.height = this.height;
 				  
-		    background.src = './photos/tyhi_'+ selectedImage[0]['id'] + '.png';
+		    //background.src = './photos/tyhi_'+ selectedImage[0]['id'] + '.png';
+			background.src = selectedImage[0]['src'];
 		    
 			background.onload = function(){
 		      ctx.drawImage(background,0,0);   
@@ -431,16 +549,16 @@
 				case 'funDesign':
 				  ctx.fillStyle = "#244999";			  
 				  ctx.font = "bold 40px arial";
-				  ctx.fillText($('.companyInput').val(), 495, 285);
+				  ctx.fillText($('.companyInput').val(), 455, 235);
 				  ctx.font = "bold 40px arial";
-				  ctx.fillText($('.nameInput').val(), 495, 535);  
+				  ctx.fillText($('.nameInput').val(), 455, 475);  
 				  break;
 				case 'elegantDesign':
 				  ctx.fillStyle = "white";			  
 				  ctx.font = "bold 40px arial";
-				  ctx.fillText($('.companyInput').val(), 515, 195);
+				  ctx.fillText($('.companyInput').val(), 515, 205);
 				  ctx.font = "bold 40px arial";
-				  ctx.fillText($('.nameInput').val(), 515, 485);
+				  ctx.fillText($('.nameInput').val(), 515, 495);
 				  break;
 			  }
 			
@@ -449,6 +567,14 @@
 		  
 		  };
 		  	
+		});
+		
+		$('.example-control-prev').on('click', function(){
+		  $('.exampleCarousel').carousel('prev');
+		});
+		
+		$('.example-control-next').on('click', function(){
+		  $('.exampleCarousel').carousel('next'); 
 		});
 		
 		$('.fun-control-prev').on('click', function(){
@@ -527,11 +653,12 @@
 	  $('.forwardButton').on('click', function(){
 		  var id = parseInt($(this).attr('id'));
 		  currentSlide(id+1);
-		
 	  
 		  if(id+1==2){
 		    $('.carouselSectionElegant').show();
 		  }
+		  
+		  window.scrollTo(0, 0);
 	  });
 	  
 	  $('#sendToEmail').on('click', function(){
@@ -589,7 +716,7 @@
 		  $.notify('Kolleegi e-mail ei vasta e-maili nõuetele.');
 		  return; 
 		}else{
-		  $('#receiverEmail').addClass('errorBorderStyle');
+		  $('#receiverEmail').removeClass('errorBorderStyle');
 		}
 		
 		if(!$('#confirmationCheckbox').is(':checked')){
@@ -684,6 +811,8 @@
 		 js.src = "https://connect.facebook.net/en_US/sdk.js";
 		 fjs.parentNode.insertBefore(js, fjs);
 	   }(document, 'script', 'facebook-jssdk'));
+	   
+	   $('.exampleCarousel').show();
 	});
 	</script>
 

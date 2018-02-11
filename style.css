@@ -114,15 +114,36 @@ img {vertical-align: middle;}
 
 /* Caption text */
 .buttonDiv {
+  font-size: 15px;
+  min-height: 15%;
+  height: auto;
+  width: 100%;
+  text-align: center;
+  padding-top: 1em;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.logoContainer{
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.orderDiv{
   color: #f2f2f2;
   font-size: 15px;
   min-height: 15%;
   height: auto;
   width: 100%;
   text-align: center;
-  padding-top: 5em;
+  padding-top: 1em;
   padding-left: 20%;
   padding-right: 20%;
+}
+
+.orderText{
+  font-weight: 600px;
+  color: black;
 }
 
 .buttonDivTemplate {
@@ -242,6 +263,41 @@ img {vertical-align: middle;}
   padding-right: 15%;
 }
 
+.footerDiv{
+  width: 90%;
+  /*min-height: 35%;*/
+  height: auto;
+  margin: auto;
+  padding-bottom: 15px;
+  display: block;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 10px;
+}
+
+.facebookTutorialDiv{
+  width: 100%;
+  /*min-height: 35%;*/
+  height: auto;
+  margin: auto;
+  padding-bottom: 15px;
+  display: block;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.facebookTutImg{
+  padding-top: 15px;
+  width: 35%;
+}
+
+.tutorialText{
+  font-size: 22px;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 15px;
+}
+
 .templateSection{
   width: 100%;
   /*min-height: 30%;*/
@@ -342,6 +398,12 @@ img {vertical-align: middle;}
   height: 100%;
 }
 
+.examplesText{
+  font-weight: 700;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
 .templateImage{
   width: 100%;
   height: 100%;
@@ -350,7 +412,11 @@ img {vertical-align: middle;}
 
 .imageContainer{
   width: 100%;
-  height: 100%;
+  /*height: 100%;*/
+}
+
+.orderHeader{
+  background-color: #FFCB31;
 }
 
 p.carousel-control-prev.elegant-control-prev ,
@@ -427,6 +493,15 @@ span.carousel-control-next-icon{
   font-size: 25px;
 }
 
+.noticeText{
+  padding-top: 10px;
+  padding-left: 8%;
+  padding-right: 8%;
+  color: red;
+  font-size: 12px;
+  
+}
+
 .modalTextArea{  
   text: 2em;
   height: 6em; 
@@ -447,7 +522,7 @@ span.carousel-control-next-icon{
   height: 30px;
 }
 
-.forwardButton, .shareButton{
+.forwardButton{
   min-width: 210px;
   width: 40%;
   min-height: 70px;
@@ -462,6 +537,53 @@ span.carousel-control-next-icon{
   border: none;
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  word-break: keep-all;
+}
+
+.shareButton{
+  min-width: 210px;
+  width: 40%;
+  min-height: 70px;
+  height: auto;
+  background-color: #244999;
+  border-color: #244999;
+  color: white;
+  border-radius: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  word-break: keep-all;
+}
+
+.modalShareButton{
+  min-width: 210px;
+  width: 100%;
+  min-height: 70px;
+  height: auto;
+  background-color: #244999;
+  border-color: #244999;
+  color: white;
+  border-radius: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 2em;
+  margin-right: 2em;
+  word-break: keep-all;
 }
 
 .finishButton{
@@ -480,14 +602,36 @@ span.carousel-control-next-icon{
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 8px;
+  word-break: keep-all;
 }
 
+.orderButton{
+  min-width: 210px;
+  width: 80%;
+  min-height: 70px;
+  height: auto;
+  background-color: #FFCB31;
+  border-color: #FFCB31;
+  color: white;
+  border-radius: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 8px;
+}
+
+.orderButton:hover{
+  background-color: #f7a74a;
+}
 .finishButton:hover{
   background-color: #548aff;
 }
 
 .templateSelection{
-  /*min-width: 210px;*/
+  min-width: 210px;
   width: auto;
   height: 50px;
   background-color: #517ad2;
@@ -562,7 +706,25 @@ input{
   font-weight: 500;
 }
 
+.orderModalTitle{
+  font-weight: 600;
+  font-size: 18;
+  padding-bottom: 10px;
+}
+
 @media only screen and (max-width: 400px) {
+  .buttonDivTemplate {
+    padding-left: 10%;
+    padding-right: 10%;
+  }	
+
+  .tutorialText{
+    font-size: 16px;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 10px;
+  }
+	
   .actionLine{
     font-size: 30px;
 	line-height: 1.2;
@@ -618,7 +780,7 @@ input{
     width: 80%;
   }
   
-  .photoSection{
+  .photoSection, .footerDiv{
 	padding-left: 5%;
 	padding-right: 5%;
   }
@@ -630,6 +792,18 @@ input{
 }
 
 @media only screen and (max-width: 600px) {
+  .buttonDivTemplate {
+    padding-left: 10%;
+    padding-right: 10%;
+  }	
+	
+  .tutorialText{
+    font-size: 16px;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 10px;
+  }
+	
   .actionLine{
     font-size: 30px;
 	line-height: 1.2;
@@ -685,7 +859,7 @@ input{
     width: 80%;
   }
   
-  .photoSection{
+  .photoSection, .footerDiv{
 	padding-left: 5%;
 	padding-right: 5%;
   }
@@ -694,9 +868,18 @@ input{
     padding-left: 5%;
     padding-right: 5%;
   }
+  
+  .facebookTutImg{
+	width: 40%;
+  }
 }
 
 @media only screen and (max-width: 800px) {
+  .buttonDivTemplate {
+    padding-left: 10%;
+    padding-right: 10%;
+  }	
+	
   .informationLine{
 	font-size: 15px;
 	padding-left: 5%;
@@ -705,7 +888,23 @@ input{
 }
 
 @media only screen and (min-width: 1000px) {
+  .buttonDivTemplate {
+    padding-left: 10%;
+    padding-right: 10%;
+  }	
+  
+  .tutorialText{
+    font-size: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 13px;
+  }
+  
   .bannerElement{
     width: 60%;
+  }
+  
+  .facebookTutImg{
+	width: 35%;
   }
 }
