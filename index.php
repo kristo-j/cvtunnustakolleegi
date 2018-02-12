@@ -25,9 +25,11 @@
 		  <div class="informationLine" align="center">
 		    <div>
 		      <p>
-			    Oscareid jagatakse kord aastas, aga kuldsüdameid saab jagada ka siis, 
-				kui kiitmise tunne peale tuleb. <mark class="textMarker">Võta 5 minutit</mark>, et tunnustada kolleegi kuldsüdamega, 
-				edastades sobiva tiitli tema <mark class="textMarker">Facebooki</mark> seinale või e-mailile.
+			    Oscareid jagatakse kord aastas, aga kuldsüdameid 
+				saab jagada ka siis, kui kiitmise tunne peale tuleb. 
+				<mark class="textMarker">Võta 3 minutit</mark>, et tunnustada kolleegi kuldsüdamega. 
+				Vali välja sobiv tiitel 10-ne hulgast ning edasta see 
+				tema <mark class="textMarker">Facebooki</mark> seinale või e-mailile.
 			  </p>
 			  <p class="examplesText">
 			    Vaata erinevaid näidiseid
@@ -330,7 +332,7 @@
 		  </div>
 		  <div class="buttonDiv">
 			<button id="shareToFacebook" type="button" class="shareButton">Tunnustan facebookis</button>
-		    <button id="sendEmailModal" type="button" class="shareButton" data-toggle="modal" data-target=".sendEmailModal">Tunnustan e-mailiga</button>
+		    <button id="sendEmailModal" type="button" class="shareButton" data-toggle="modal" data-target=".sendEmailModal">Tunnustan emailiga</button>
 		  </div>
 		</div>
 		
